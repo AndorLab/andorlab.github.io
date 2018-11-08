@@ -1,7 +1,12 @@
 {
-  "name": "hexo-site",
+  "name": "andorlab-github.io",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://andorlab.github.io",
+  "scripts": {
+    "predeploy": "hexo clean && hexo g",
+    "deploy": "gh-pages -d public"
+  },
   "hexo": {
     "version": "3.8.0"
   },
@@ -17,6 +22,7 @@
     "hexo-server": "^0.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "hexo-generator-feed": "^1.2.2",
     "hexo-generator-search": "^2.3.0",
     "hexo-permalink-pinyin": "^1.0.0",
